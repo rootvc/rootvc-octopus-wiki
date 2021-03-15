@@ -10,7 +10,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+  color: #eeeeee;
 }
 #root {
   height: 100%;
@@ -73,8 +74,8 @@ a:hover {
   padding: 20px;
   font-size: 12px;
   line-height: 1.4;
-  border-right: 1px solid #e6d02e;
-  background: #ffeb3b;
+  border-right: 1px solid #eeeeee;
+  background: #1f1f1f;
   max-height: 100vh;
   overflow: auto;
   flex-shrink: 0;
@@ -86,7 +87,8 @@ a:hover {
 }
 .app__menu__options,
 .app__menu .app__menu__options a {
-  color: #b3ab64;
+  color: #eeeeee;
+  text-transform: lowercase;
 }
 
 .app__wrapper--edit-mode .app__menu {
@@ -95,14 +97,14 @@ a:hover {
 .app__menu--made-by {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid #e6d02e;
+  border-top: 1px solid #eeeeee;
 }
 .app__menu--made-by p {
   margin: .5em 0;
 }
 .app__menu--made-by,
 .app__menu .app__menu--made-by a {
-  color: #b1a538;
+  color: #eeeeee;
 }
 .app__menu--made-by img {
   height: 26px;
@@ -111,7 +113,7 @@ a:hover {
 }
 .app__menu a,
 .app__menu__container > ul > li > ul, .app__menu__container > ul > li > details > ul {
-  color: #d34352;
+  olor: #69b6fd;
 }
 .app__menu__container > ul {
   font-size: 16px;
