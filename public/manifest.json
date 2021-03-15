@@ -1,11 +1,11 @@
 {
-  "short_name": "Octopus",
-  "name": "Internal knowledge base",
+  "short_name": "Root Ventures Wiki",
+  "name": "Root Ventures Founders Wiki",
   "icons": [
     {
-      "src": "./static/octopus.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "./static/favicon.jpg",
+      "sizes": "261x261",
+      "type": "image/jpeg"
     }
   ],
   "start_url": "./index.html",

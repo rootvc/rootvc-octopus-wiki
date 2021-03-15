@@ -85,7 +85,8 @@ a:hover {
 }
 .app__menu__options {
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
 }
 .app__menu__options,
 .app__menu .app__menu__options a {
@@ -98,8 +99,6 @@ a:hover {
 }
 .app__menu--made-by {
   text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #eeeeee;
 }
 .app__menu--made-by p {
   margin: .5em 0;
@@ -187,8 +186,8 @@ a:hover {
 .app__logo img {
   vertical-align: middle;
 }
-.app__logo .octopus {
-  height: 50px;
+.app__logo .rootvc-logo {
+  height: 125px;
 }
 
 .app__content {

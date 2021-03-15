@@ -126,7 +126,7 @@ export default class MenuSearch extends Component {
                   onSubmit={(event) => event.preventDefault()}
             >
                 <input
-                    placeholder="Search in menu..."
+                    placeholder="Search by title"
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                     onBlur={this.cleanResults}
