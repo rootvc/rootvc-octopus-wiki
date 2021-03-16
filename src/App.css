@@ -220,3 +220,22 @@ a:hover {
 a.edit-menu {
   color: #69b6fd !important;
 }
+
+@media only screen and (max-width: 480px) {
+  .app__menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 0;
+    padding-bottom: 0;
+  }
+
+  .app__menu__container, .app__menu__options, .app__menu--made-by, #menuSearch {
+    display: none;
+  }
+
+  .content--page {
+    position: absolute;
+    top: 180px;
+  }
+}
