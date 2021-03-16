@@ -23,9 +23,7 @@ The Root Ventures Founders Wiki is a fork of [Octopus](https://github.com/livech
 ## Access
 Access to the Founders Wiki is restricted to Root Ventures portfolio founders only. Email any of the partners, or the team to get access.
 
-## Using Octopus
-Octopus is designed to be very easy to use.
-
+## Using the Wiki
 To create a new page, just enter the URL you wish to create, for example: `https://wiki.root.vc/test/new-page`. If such page has not been created yet, you will see the following screen:
 
 <kbd>
