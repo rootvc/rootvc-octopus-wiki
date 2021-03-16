@@ -18,9 +18,6 @@ import { MenuSearch } from './components/menu-search';
 
 import {
   menuTemplate,
-  companyStructureTemplate,
-  productRoadmapTemplate,
-  diagramsHelpTemplate,
   newPageTemplate
 } from './templates';
 
@@ -143,11 +140,6 @@ class App extends Component {
 
   createExamplePages() {
     this.setupPage('menu', menuTemplate);
-    this.setupPage('company-structure', companyStructureTemplate);
-    this.setupPage('roadmap', productRoadmapTemplate);
-    this.setupPage('project-1', newPageTemplate);
-    this.setupPage('project-2', newPageTemplate);
-    this.setupPage('diagrams-help', diagramsHelpTemplate);
   }
 
   // window.navigateTo(event, url)
