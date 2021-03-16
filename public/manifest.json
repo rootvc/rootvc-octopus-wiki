@@ -3,9 +3,9 @@
   "name": "Root Ventures Founders Wiki",
   "icons": [
     {
-      "src": "./static/favicon.jpg",
-      "sizes": "261x261",
-      "type": "image/jpeg"
+      "src": "./static/logo-tree-white.png",
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ],
   "start_url": "./index.html",

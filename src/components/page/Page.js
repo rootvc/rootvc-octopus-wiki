@@ -150,17 +150,6 @@ export default class Page extends Component {
 
     return (
       <div className={contentClass.join(' ')}>
-        <div className="content__meta">
-          {this.props.canEdit &&
-            <p>{meta.reduce((acc, x) => acc === null ? [x] : [acc, ' | ', x], null)}</p>
-          }
-          {this.props.currentlyViewing.length > 0 &&
-            <p className="content__meta__currently-viewing">
-              Reading now: {this.props.currentlyViewing.map(user => <Person data={user} key={user.email} />)}
-            </p>
-          }
-        </div>
-
         <div className="content__body">
           <Markdown className="content__markdown content--markdown">
           {this.state.body}
@@ -186,6 +175,17 @@ export default class Page extends Component {
             </div>
           }
         </div>
+        <div className="content__meta">
+          {this.props.canEdit &&
+            <p>{meta.reduce((acc, x) => acc === null ? [x] : [acc, ' | ', x], null)}</p>
+          }
+          {/* {this.props.currentlyViewing.length > 0 &&
+            <p className="content__meta__currently-viewing">
+              Reading now: {this.props.currentlyViewing.map(user => <Person data={user} key={user.email} />)}
+            </p>
+          } */}
+        </div>
+
       </div>
     );
   }
