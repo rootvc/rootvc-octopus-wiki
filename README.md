@@ -2,6 +2,8 @@
 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e57f4c2e-6239-4bf9-9e47-0cde602cca6f/deploy-status)](https://app.netlify.com/sites/rootvc-octopus-wiki/deploys)
+
 **Founders Wiki** is where Root Ventures portfolio founders can find info such as cloud hosting credits, discounts on products and services like [Brex](https://brex.com) and [Lever](https://lever.co), and recommendations for professional services like executive coaches, product design and industrial design firms, lawyers, accountants, and personal therapists.
 
 This project is based on **🐙 Octopus**, which is a server-less, easy-to-setup internal wiki page with built-in software diagrams support. It uses **Markdown** for writing content and enhances it with [Graphviz](http://graphviz.org) and [flowchart.js](http://flowchart.js.org/) diagrams for easy software documentation.
