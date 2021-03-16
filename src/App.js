@@ -280,8 +280,10 @@ class App extends Component {
           </p>
 
           <div className="app__menu--made-by">
-            <p>Created by <a href="https://root.vc" target="_blank" rel="noopener noreferrer">the Root team</a></p>
+            <p>Created by <a href="https://github.com/rootvc" target="_blank" rel="noopener noreferrer">the Root team</a></p>
             <p>based on <a href="https://github.com/livechat/octopus" target="_blank" rel="noopener noreferrer">Octopus Wiki</a></p>
+            <br />
+            <p><a href="https://github.com/rootvc/rootvc-octopus-wiki/" target="_blank" rel="noopener noreferrer">See the code</a></p>
           </div>
         </div>
 
