@@ -18,7 +18,6 @@ import { MenuSearch } from './components/menu-search';
 
 import {
   menuTemplate,
-  newPageTemplate
 } from './templates';
 
 class App extends Component {
@@ -274,7 +273,7 @@ class App extends Component {
               </Markdown>
             </div>
           }
-
+          
           <p className="app__menu__options">
             <a href="" onClick={() => { firebase.auth().signOut(); return false; }}>Sign out</a> | <NavLink to="/menu" className="edit-menu">Edit this menu</NavLink><br /><br />
           </p>

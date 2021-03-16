@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import throttle from 'lodash/throttle';
 import { Markdown } from '../markdown';
 import { distanceInWordsToNow } from 'date-fns';
-import { Person } from '../person';
 
 import './Page.css';
 import '../../css/markdown.css';
@@ -142,7 +141,7 @@ export default class Page extends Component {
 
     let meta = [];
     if (this.props.lastChangeTimestamp) {
-      meta.push(<span key="last-change-timestamp">Last modified: {distanceInWordsToNow(new Date(this.props.lastChangeTimestamp * 1e3))} ago by <img className="author-avatar" src={this.props.lastChangeAuthorPhotoURL} /> {this.props.lastChangeAuthorEmail}</span>);
+      meta.push(<span key="last-change-timestamp">Last modified: {distanceInWordsToNow(new Date(this.props.lastChangeTimestamp * 1e3))} ago by <img className="author-avatar" src={this.props.lastChangeAuthorPhotoURL} alt="User's avatar" /> {this.props.lastChangeAuthorEmail}</span>);
     }
     if (!this.state.editMode) {
       meta.push(<a key="edit-mode" href="" onClick={this.enableEditMode}>Edit this page</a>);
