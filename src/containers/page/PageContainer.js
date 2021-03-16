@@ -60,7 +60,8 @@ export default class PageContainer extends Component {
           e404: false,
           body: data.body,
           lastChangeTimestamp: data.lastChangeTimestamp,
-          lastChangeAuthor: data.lastChangeAuthor
+          lastChangeAuthorEmail: data.lastChangeAuthorEmail,
+          lastChangeAuthorPhotoURL: data.lastChangeAuthorPhotoURL
         });
       } else if (this.getCurrentPath() === 'index') {
         this.createIndexPage();
@@ -92,7 +93,8 @@ export default class PageContainer extends Component {
     firebase.database().ref(`pages/${this.getCurrentPath()}`).update({
       body: newBody,
       lastChangeTimestamp: Utils.getTimestamp(),
-      lastChangeAuthor: Firebase.getUser().email
+      lastChangeAuthorEmail: Firebase.getUser().email,
+      lastChangeAuthorPhotoURL: Firebase.getUser().photoURL
     });
 
     this.setState({
@@ -104,7 +106,8 @@ export default class PageContainer extends Component {
     firebase.database().ref(`pages/${this.getCurrentPath()}`).update({
       body: newPageTemplate,
       lastChangeTimestamp: Utils.getTimestamp(),
-      lastChangeAuthor: Firebase.getUser().email
+      lastChangeAuthorEmail: Firebase.getUser().email,
+      lastChangeAuthorPhotoURL: Firebase.getUser().photoURL
     });
   }
 
@@ -141,7 +144,8 @@ export default class PageContainer extends Component {
         canEdit={this.canEditPage()}
         currentlyViewing={this.state.currentlyViewing}
         lastChangeTimestamp={this.state.lastChangeTimestamp}
-        lastChangeAuthor={this.state.lastChangeAuthor}
+        lastChangeAuthorEmail={this.state.lastChangeAuthorEmail}
+        lastChangeAuthorPhotoURL={this.state.lastChangeAuthorPhotoURL}
         body={this.state.body}
         onEditModeChange={this.props.onEditModeChange}
         onChangesSaved={this.onChangesSaved}

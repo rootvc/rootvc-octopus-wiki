@@ -142,7 +142,7 @@ export default class Page extends Component {
 
     let meta = [];
     if (this.props.lastChangeTimestamp) {
-      meta.push(<span key="last-change-timestamp">Last modified: {distanceInWordsToNow(new Date(this.props.lastChangeTimestamp * 1e3))} ago by {this.props.lastChangeAuthor}</span>);
+      meta.push(<span key="last-change-timestamp">Last modified: {distanceInWordsToNow(new Date(this.props.lastChangeTimestamp * 1e3))} ago by <img className="author-avatar" src={this.props.lastChangeAuthorPhotoURL} /> {this.props.lastChangeAuthorEmail}</span>);
     }
     if (!this.state.editMode) {
       meta.push(<a key="edit-mode" href="" onClick={this.enableEditMode}>Edit this page</a>);
@@ -199,6 +199,7 @@ Page.propTypes = {
   canEdit: PropTypes.bool,
   currentlyViewing: PropTypes.array,
   lastChangeTimestamp: PropTypes.number,
-  lastChangeAuthor: PropTypes.string,
+  lastChangeAuthorEmail: PropTypes.string,
+  lastChangeAuthorPhotoURL: PropTypes.string,
   hash: PropTypes.string
 };

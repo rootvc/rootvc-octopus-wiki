@@ -114,11 +114,18 @@ a:hover {
 }
 .app__menu a,
 .app__menu__container > ul > li > ul, .app__menu__container > ul > li > details > ul {
-  color: #69b6fd;
+  color: #eeeeee;
 }
 .app__menu__container > ul {
+  font-family: Abel, Arial, Helvetica, sans-serif;
   font-size: 16px;
+  letter-spacing: 1px;
   line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.app__menu__container > ul > li {
+  margin-bottom: .8em;
 }
 
 .app__menu__container > ul > li > details {
@@ -134,8 +141,12 @@ a:hover {
 }
 
 .app__menu__container > ul > li > ul, .app__menu__container > ul > li > details > ul {
-  margin: 10px 0 24px 0;
-  font-size: 14px;
+  margin: 10px 0 24px 6px;
+  font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .app__menu__container > ul > li > details > ul {
@@ -145,13 +156,14 @@ a:hover {
 .app__menu__container > ul > li > ul > li, .app__menu__container > ul > li > details > ul > li {
   margin-bottom: .8em;
 }
-.app__menu__container a.active {
-  font-weight: bold;
+.app__menu__container a.active::before {
+  content: "> ";
 }
 .app__menu__container > ul > li > ul > li > ul, .app__menu__container > ul > li > details > ul > li > ul {
-  margin: 5px 0 0 5px;
-  font-size: 12px;
   color: #eeeeee;
+  font-size: 12px;
+  margin: 5px 0 0 5px;
+  letter-spacing: 3px;
 }
 .app__menu__container > ul > li > ul > li > ul > li, .app__menu__container > ul > li > details > ul > li > ul > li {
   padding: 2px 0;
@@ -203,4 +215,8 @@ a:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+a.edit-menu {
+  color: #69b6fd !important;
 }

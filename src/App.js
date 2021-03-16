@@ -284,7 +284,7 @@ class App extends Component {
           }
 
           <p className="app__menu__options">
-            <a href="" onClick={() => { firebase.auth().signOut(); return false; }}>Sign out</a> | <NavLink to="/menu">Edit menu</NavLink><br /><br />
+            <a href="" onClick={() => { firebase.auth().signOut(); return false; }}>Sign out</a> | <NavLink to="/menu" className="edit-menu">Edit this menu</NavLink><br /><br />
           </p>
 
           <div className="app__menu--made-by">
