@@ -60,7 +60,7 @@ export default class PageContainer extends Component {
           e404: false,
           body: data.body,
           lastChangeTimestamp: data.lastChangeTimestamp,
-          lastChangeAutor: data.lastChangeAutor
+          lastChangeAuthor: data.lastChangeAuthor
         });
       } else if (this.getCurrentPath() === 'index') {
         this.createIndexPage();
@@ -92,7 +92,7 @@ export default class PageContainer extends Component {
     firebase.database().ref(`pages/${this.getCurrentPath()}`).update({
       body: newBody,
       lastChangeTimestamp: Utils.getTimestamp(),
-      lastChangeAutor: Firebase.getUser().email
+      lastChangeAuthor: Firebase.getUser().email
     });
 
     this.setState({
@@ -104,7 +104,7 @@ export default class PageContainer extends Component {
     firebase.database().ref(`pages/${this.getCurrentPath()}`).update({
       body: newPageTemplate,
       lastChangeTimestamp: Utils.getTimestamp(),
-      lastChangeAutor: Firebase.getUser().email
+      lastChangeAuthor: Firebase.getUser().email
     });
   }
 
@@ -141,7 +141,7 @@ export default class PageContainer extends Component {
         canEdit={this.canEditPage()}
         currentlyViewing={this.state.currentlyViewing}
         lastChangeTimestamp={this.state.lastChangeTimestamp}
-        lastChangeAutor={this.state.lastChangeAutor}
+        lastChangeAuthor={this.state.lastChangeAuthor}
         body={this.state.body}
         onEditModeChange={this.props.onEditModeChange}
         onChangesSaved={this.onChangesSaved}
