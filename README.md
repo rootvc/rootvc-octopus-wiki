@@ -17,7 +17,7 @@ The Root Ventures Founders Wiki is a fork of [Octopus](https://github.com/livech
 
 #### Page editing with Markdown
 <kbd>
-  <img src="./readme-assets/edit-page.png" alt="" height="300" />
+  <img src="./readme-assets/edit-page.png" alt="" width="500px" />
 </kbd>
 
 ## Access
