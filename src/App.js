@@ -282,7 +282,7 @@ class App extends Component {
             <p>Created by <a href="https://github.com/rootvc" target="_blank" rel="noopener noreferrer">the Root team</a></p>
             <p>based on <a href="https://github.com/livechat/octopus" target="_blank" rel="noopener noreferrer">Octopus Wiki</a></p>
             <br />
-            <p><a href="https://github.com/rootvc/rootvc-octopus-wiki/" target="_blank" rel="noopener noreferrer">See the code</a></p>
+            <p><a href="https://github.com/rootvc/rootvc-octopus-wiki/" target="_blank" rel="noopener noreferrer"><img alt="GitHub" src="static/github-logo.png" className="github-logo" />view source code</a></p>
           </div>
         </div>
 

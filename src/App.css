@@ -221,6 +221,14 @@ a.edit-menu {
   color: #69b6fd !important;
 }
 
+.app__menu--made-by .github-logo {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
 @media only screen and (max-width: 480px) {
   .app__menu {
     position: absolute;
