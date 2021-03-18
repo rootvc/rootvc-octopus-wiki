@@ -242,7 +242,7 @@ a.edit-menu {
     display: none;
   }
 
-  .content--page {
+  .content {
     position: absolute;
     top: 180px;
   }

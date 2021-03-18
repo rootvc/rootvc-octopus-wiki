@@ -1,0 +1,45 @@
+.app__content {
+  width: 100%;
+  max-width: 600px;
+}
+
+#inviteUser {
+  position: relative;
+  margin: 1.5em auto;
+}
+
+#inviteUser input {
+  width: 66%;
+  border: 1px #bfbfbf solid;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+#inviteUser label p {
+  font-family: Abel, Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#inviteUser input[type=submit] {
+  margin-left: 1px;
+  width: 33%;
+}
+
+#inviteUser input:focus {
+  outline: none;
+}
+
+.invite-user > p {
+  font-size: 0.8em;
+  color: #000000;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+#success {
+  background-color: #4AF626;
+  padding: 5px;
+}

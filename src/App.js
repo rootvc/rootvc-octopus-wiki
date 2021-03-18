@@ -15,6 +15,7 @@ import { PageContainer } from './containers/page';
 import { Markdown } from './components/markdown';
 import { PeopleOnline } from './components/people-online';
 import { MenuSearch } from './components/menu-search';
+import { InviteUser } from './components/invite-user';
 
 import {
   menuTemplate,
@@ -289,6 +290,7 @@ class App extends Component {
         <div className="app__content">
           <Switch>
             <Route path="/online" component={PeopleOnline} />
+            <Route path="/invite" component={InviteUser} />
             <Route render={this.renderComponentForRoute()} />
           </Switch>
         </div>
