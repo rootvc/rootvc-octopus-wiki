@@ -41,7 +41,7 @@ When you click "Create this page", new page will be created and filled in with d
 Once the page is ready, you can easily include it in the menu:
 
 <kbd>
-  <img src="./readme-assets/edit-menu.png" alt="" />
+  <img src="./readme-assets/edit-menu.png" alt="" width="250px" />
 </kbd>
 <br /><br />
 
