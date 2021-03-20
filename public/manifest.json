@@ -3,7 +3,7 @@
   "name": "Root Ventures Founders Wiki",
   "icons": [
     {
-      "src": "./static/logo-tree-white.png",
+      "src": "./static/favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
